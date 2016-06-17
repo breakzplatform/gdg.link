@@ -42,7 +42,39 @@
 .👀 span:nth-child(4){
   color: #FFC20A;
 }
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  width: 320px;
+  max-width: 100%;
+  background-color: #f5f5f5;
+  font-family:monospace; 
+  border-bottom: solid 5px #4F8EF5;
+}
+input[type="text"]:focus {
+  outline: 0;
+  border-bottom: solid 5px #DD4D40;
+}
+
+input[type="submit"] { 
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: #4F8EF5;
+  font-family:monospace; 
+}
+
+#rest {
+  display: none;
+}
+
+footer {
+  color: #ccc;
+  margin-top: 2em;
+}
     </style>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
   <body>
@@ -51,7 +83,14 @@
       <p><strong>gdg.link</strong> can be used on tree ways:</p>
 
       <h2>&sup1;go.gdg.link</h2>
-      <p>It's the most basic use, generating a random short url for a specifc link. You can short a link by using this form below. If you need a API key for something you are developing on, ask me on Twitter.</p>
+      <p>It's the most basic use, generating a random short url for a specifc link. You can short a link by using this form below. If you need an API key for something you are developing on, ask me on Twitter.</p>
+      <form method="post" action="http://go.gdg.link">
+        <p><input type="text" class="text" name="url" placeholder="Paste your url..." onfocus="urlForm()" /></p>
+        <div id="rest">
+          <div class="g-recaptcha" data-sitekey="6LenySITAAAAAMSbgB1WY1iJwOfYl0iEQ_ABXuFI"></div>
+          <p><input type="submit" value="Shorten" /></p>
+        </div>
+      </form> 
 
       <h2>&sup2;gdg.link/<span class="🕶">myurl</span></h2>
       <p>If you want a custom url and use directly the <strong>gdg.link</strong> domain, fork the repo and create a file <code>myurl.html</code> (where <code>myurl</code> is the url that will be used) on the <code>gh-pages</code> branch. Then, redirect it to your page by setting the <code>window.location.href</code> via JavaScript (how?). After that, make a Pull Request on GitHub. The urls are distributed as "first come, first served".</p>
@@ -62,5 +101,11 @@
       <footer>
         <p>made for people by joselito from gdg recife|humildão &middot; terms of service &middot; privacy policy</p>
       </footer>
+
+      <script type="text/javascript">
+        function urlForm() {
+          document.getElementById("rest").style.display = "block";
+        }
+      </script>
   </body>
 </html>
