@@ -10,122 +10,17 @@
     <link rel="canonical" href="https://gdg.link/">
     <title>gdg.link &middot; A url shortner for the GDG community</title>
     <style type="text/css">
-        body {
-            color: #555;
-            margin: 1rem;
-            padding: 0;
-            font-family: monospace;
-            max-width: 720px;
-        }
-        
-        a,
-        a:link,
-        a:visited {
-            color: #00f
-        }
-        
-        
-        .👀 {
-            display: inline-block;
-            margin: 0;
-            font-size: 2.4rem
-        }
-        
-        .👀 {
-            color: #767676
-        }
-        
-        .👀 span:nth-child(1) {
-            color: #4F8EF5;
-        }
-        
-        .👀 span:nth-child(2) {
-            color: #DD4D40;
-        }
-        
-        .👀 span:nth-child(3) {
-            color: #15A05C;
-        }
-        
-        .👀 span:nth-child(4) {
-            color: #FFC20A;
-        }
-        
-        .🕶 {
-            background: #000;
-            color: #fff;
-        }
-        
-        ul {
-            margin: 0;
-            padding: 0
-        }
-        
-        ul li {
-            list-style: none
-        }
-        
-        h1 {
-            text-transform: uppercase
-        }
-        
-        h2 {
-            text-transform: lowercase
-        }
-        
-        
-        code {
-            background: #f5f5f5;
-            border-radius: 2pt;
-            padding: 0 5px;
-        }
-        
-        
-        input[type="text"] {
-            padding: 10px;
-            border: none;
-            width: 320px;
-            max-width: 100%;
-            background-color: #f5f5f5;
-            font-family: monospace;
-            border-bottom: solid 5px #4F8EF5;
-        }
-        
-        input[type="text"]:focus {
-            outline: 0;
-            border-bottom: solid 5px #DD4D40;
-        }
-        
-        input[type="submit"] {
-            border: none;
-            padding: 10px;
-            color: #fff;
-            background-color: #4F8EF5;
-            font-family: monospace;
-        }
-        
-        #rest {
-            display: none;
-        }
-        
-        footer {
-            color: #ccc;
-            text-transform: lowercase;
-        }
-        
-        footer a, footer a:link, footer a:visited {
-            color: #ccc;
-        }
-        
-        section {
-            margin:  0 0 2.5rem;
-        }
+        body{color:#555;margin:1rem;padding:0;font-family:monospace;max-width:720px}a,a:link,a:visited{color:#00f}.logo{width:320px;height:auto}.🕶{background:#000;color:#fff}ul{margin:0;padding:0}ul li{list-style:none}h1{text-transform:uppercase}h2{text-transform:lowercase}code{background:#f5f5f5;border-radius:2pt;padding:0 5px}input[type="text"]{padding:10px;border:none;width:320px;max-width:100%;background-color:#f5f5f5;font-family:monospace;border-bottom:solid 5px #4F8EF5}input[type="text"]:focus{outline:0;border-bottom:solid 5px #DD4D40}input[type="submit"]{border:none;padding:10px;color:#fff;background-color:#4F8EF5;font-family:monospace}#rest{display:none}footer{color:#ccc;text-transform:lowercase}footer a,footer a:link,footer a:visited{color:#ccc}section{margin:0 0 2.5rem}
     </style>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
-    <h1 class="👀">gdg.<span>l</span><span>i</span><span>n</span><span>k</span></h1>
+    <h1>
+      <a href="http://gdg.link">
+        <img src="logo.png" class="logo" alt="gdg.link" />
+      </a>
+    </h1>
     <p><strong>gdg.link</strong> is a free url shortener and subdomain service for Google Developer Groups community. Use it for your own GDG pages, events and to share links with your community.</p>
     <p><strong>gdg.link</strong> can be used in four ways:</p>
     <section>
@@ -133,19 +28,17 @@
         <p>It's the most basic use, generating a random short url for a specifc link. You can shorten a link by using the form below. If you need an API for something you are developing, make me a <a href="https://twitter.com/joselitojunior1">request on Twitter</a>.</p>
         <form method="post" action="https://go.gdg.link">
             <p>
-                <input type="text" class="text" name="url" placeholder="Paste your url..." onfocus="showFullForm()" />
-            </p>
+                <input type="text" class="text" name="url" placeholder="Paste your url..." onfocus="showFullForm()" /> </p>
             <div id="rest">
                 <div class="g-recaptcha" data-sitekey="6LenySITAAAAAMSbgB1WY1iJwOfYl0iEQ_ABXuFI"></div>
                 <p>
-                    <input type="submit" value="Short it!" />
-                </p>
+                    <input type="submit" value="Short it!" /> </p>
             </div>
         </form>
     </section>
     <section>
         <h2>gdg.link/<span class="🕶">something</span></h2>
-        <p>If you want to use the gdg.link domain directly with a custom url, fork the repo and create a file something.html(where something is the url that will be used) on the gh-pages branch. Then, redirect it to your page by setting the window.location.href via JavaScript (how?). After that, make a Pull Request on GitHub. The urls are distributed on a "first come, first served" basis.</p>
+        <p>If you want to use the gdg.link domain directly with a custom url, fork the repo and create a file something.html(where something is the url that will be used) on the gh-pages branch. Then, redirect it to your page by setting the window.location.href via JavaScript (<a href="https://gist.github.com/joselitojunior1/aac84f9993eaf55f3e4c22770fff4ff3">how</a>?). After that, make a Pull Request on GitHub. The urls are distributed on a "first come, first served" basis.</p>
     </section>
     <section>
         <h2><span class="🕶">something</span>.gdg.link</h2>
