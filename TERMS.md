@@ -1,0 +1,7 @@
+# Terms of Use
+- Users of this website (Users) agree to be bound by these terms and conditions, which are subject to change at the sole discretion of the site. Your use of and access to this site indicate your acceptance of these terms and conditions.
+- This site was created as a free service to make posting long URLs easier. This service is provided without warranty of any kind. Short URLs used in spam (including email and forum spam) will be disabled.
+- This site may include third party content which is subject to that third party's terms and conditions of use.
+- This site may include links to third party sites which are not related to this site and in relation to which we have no control or interest. The appearance of those links on this site does not indicate any relationship between this site and that third party or any endorsement by this site of that third party, its site or the products or services which it is advertising on this site.
+- This site will have no responsibility or liability in relation to any loss or damage which you incur, including damage to your software or hardware, arising from your use of or access to this site.
+- Users will not use this site for any purpose or in any way which is unlawful.
